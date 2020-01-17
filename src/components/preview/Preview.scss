@@ -1,0 +1,58 @@
+.preview {
+  display: grid;
+  grid-template-columns: 284.44px 210px;
+  grid-template-rows: 160px;
+}
+
+.image-container {
+  position: relative;
+  grid-row: 1 / 2;
+
+  img {
+    height: 100%;
+    //max-width: 210px;
+  }
+
+  /* Video duration label at bottom right */
+  .time-label {
+    position: absolute;
+    background: #111111;
+    bottom: 8px;
+    right: 0;
+    opacity: 0.8;
+    border-radius: 2px;
+    font-weight: 500;
+    color: white;
+    margin: 4px;
+    padding: 2px 4px;
+    line-height: 25px;
+  }
+}
+
+.video-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #111111;
+
+  .video-preview-metadata-container {
+    padding-top: 5px;
+    font-size: 13px;
+    color: #111111;
+    .channel-title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .show-max-two-lines {
+    overflow: hidden;
+    line-height: 1.4em;
+    max-height: 2.8em;
+  }
+
+  .semi-bold {
+    font-weight: 600;
+  }
+}

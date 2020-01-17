@@ -1,11 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import './Button.scss';
+import "./Button.scss";
 
 function Button() {
-  return (
-    <div className="button"> lol</div>
-  );
+  return <div className="button"> lol</div>;
 }
 
 export default Button;
